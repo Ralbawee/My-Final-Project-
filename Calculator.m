@@ -79,7 +79,7 @@ function seven_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 str=get(handles.inputastext,'String');
-str=strcat(str,('7'));
+str=strcat(str,('7')); %I added the number in this line so the code knows to put it in as an input and I did that for numbers 0 through 9 throughout the code. 
 set(handles.inputastext,'String',str);
 
 
@@ -144,7 +144,7 @@ function add_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 str=get(handles.inputastext,'String');
-str=strcat(str,'+');
+str=strcat(str,'+'); % I copied the same code from the numbers but this time I added the signs such as pluse, minus, multipliy, and divide. 
 set(handles.inputastext,'String',str);
 
 
@@ -232,7 +232,7 @@ function clear_Callback(hObject, eventdata, handles)
 % hObject    handle to clear (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-set(handles.inputastext,'String','');
+set(handles.inputastext,'String',''); % I left the '' empty because this is the clear command and for the code to know to clear it I had to leave them empty. 
 set(handles.textasoutput,'String','');
 
 
